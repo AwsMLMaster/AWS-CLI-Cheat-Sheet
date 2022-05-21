@@ -46,13 +46,19 @@
     ```Cloning into 'local-repo-name'...```
     ```fatal: repository 'https://account.eu-west1.amazonaws.com/v1/repos/remotereponame/' not found```
     
-    **_Problem_**: your credentials are probably not active.
+    **_Problem 1_**: your credentials are probably not active.
     
-    **_Resolution_**:
+    **_Resolution 1_**:
     
     option 1: export AWS_PROFILE=user2 (use your relevant profile as default)
     
     option 2: copy from the SSO webpage the Command line or programmatic access environment variables (copy text under option1 on web page)
+    
+    **_Problem 2_**: git-remote-code commit not accessible
+    
+    **_Resolution 2_**: add installation path to PATH environment variable
+
+    ```export PATH="/Users/username/Library/Python/3.8/bin:$PATH"```
 
     •	**git push** (local origin to remote master branch)
     
