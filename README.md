@@ -95,7 +95,7 @@
 ## Terraform -  using sso
   1. Configuring the AWS CLI to use AWS SSO for a specific account and add new profile entry
     ```aws configure sso```
-    2. use terraform :)
+  2. Use terraform :)
       ```terraform init```
       ```terraform plan```
       ```terraform apply```
