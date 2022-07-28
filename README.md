@@ -92,5 +92,13 @@
     Now try again. It should work. You may have to do it again next time as well when you face the error 403.
     One of the possible reason for this issue is the keychain password different than login password on your MAC.
 
+## Terraform -  using sso
+  1. Configuring the AWS CLI to use AWS SSO for a specific account and add new profile entry
+    ```aws configure sso```
+    2. use terraform :)
+      ```terraform init```
+      ```terraform plan```
+      ```terraform apply```
+      ```terraform destroy```
 
     ![image](https://user-images.githubusercontent.com/105966482/169641694-6daee9cd-cafa-44f2-9312-a1272e423629.png)
