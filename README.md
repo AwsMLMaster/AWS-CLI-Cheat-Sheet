@@ -16,7 +16,7 @@
 
 4.	Who am I
 
-    default:  
+    <font color="red"> default:  </font>
     ```aws sts get-caller-identity```  
       
     for a specific profile:  
