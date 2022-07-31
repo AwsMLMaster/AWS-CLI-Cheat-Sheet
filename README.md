@@ -10,11 +10,12 @@
  
     ```export AWS_PROFILE=160177016713_reposname_codecommit_powerusers_```
 
-3.	List profiles
+3.	List profiles. 
 
     ```aws configure list-profiles```
 
-4.	Who am I
+4.	Who am I  
+
     default:  
     ```aws sts get-caller-identity```  
       
