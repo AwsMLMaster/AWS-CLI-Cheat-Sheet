@@ -15,7 +15,7 @@
     ```aws configure list-profiles```
 
 4.	Who am I
-    -default:-  
+    default:  
     ```aws sts get-caller-identity```  
       
     for a specific profile:  
