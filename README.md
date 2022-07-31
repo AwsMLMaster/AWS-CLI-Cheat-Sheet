@@ -17,6 +17,7 @@
 4.	Who am I
 
     ```aws sts get-caller-identity```
+    for a specific profile: ```aws sts get-caller-identity --profile <profile name>```
 
 5.	Enable command completion
 
