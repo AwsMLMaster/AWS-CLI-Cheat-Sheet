@@ -64,7 +64,7 @@
 
     ```export PATH="/Users/username/Library/Python/3.8/bin:$PATH"```
     
-    **_Problem 3_**: ```Cloning into 'custom-control-tower-configuration'...
+    **_Problem 3_**: ```Cloning into 'custom-control-tower-configuration'...  
     git: 'remote-codecommit' is not a git command. See 'git --help'.```
     
     **_Resolution 3_**: reinstall git-remote-codecommit
