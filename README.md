@@ -46,7 +46,7 @@
 4.	Clone repo: ```git clone codecommit://MyDemoRepo my-demo-repo```.
     No need for full https/ssh link. just the remote and local repo name.
     
-    uner the directory you ran the command above, a new directory will be created with the givven name:  my-demo-repo
+    Uner the directory you ran the command above, a new directory will be created with the givven name:  _my-demo-repo_
 
 5.	Troubleshoot:
 
