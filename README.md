@@ -40,10 +40,13 @@
 2.	Install git-remote-codecommit: pip3 install git-remote-codecommit. Validate the installation path in in your $PATH.
     (See More: https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-git-remote-codecommit.html)
 
-3.	Clone repo: ```git clone codecommit://MyDemoRepo my-demo-repo```.
+3.  Create new repo from cli (after aws sso login)
+    ```aws codecommit create-repository --repository-name ServiceCatalog --repository-description "Service Catalog CFN code"```
+
+4.	Clone repo: ```git clone codecommit://MyDemoRepo my-demo-repo```.
     No need for full https/ssh link. just the remote and local repo name.
 
-4.	Troubleshoot:
+5.	Troubleshoot:
 
     •	**git clone**:
     
