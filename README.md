@@ -122,3 +122,9 @@
       ```terraform destroy```
 
     ![image](https://user-images.githubusercontent.com/105966482/169641694-6daee9cd-cafa-44f2-9312-a1272e423629.png)
+
+## Git -  standard order of code change and push
+  1. git status
+  2. git add .
+  3. git commit -m "message about the change"
+  4. git push
