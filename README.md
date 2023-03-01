@@ -128,3 +128,7 @@
   2. git add .
   3. git commit -m "message about the change"
   4. git push
+
+
+## Access S3 endpoint
+aws s3 --region eu-west-1 --endpoint-url https://bucket.<s3 main endpoint> ls s3://<bucketname>
