@@ -131,4 +131,4 @@
 
 
 ## Access S3 endpoint
-aws s3 --region eu-west-1 --endpoint-url https://bucket."<s3 main endpoint>" ls s3:// "<bucketname>"
+aws s3 --region eu-west-1 --endpoint-url https://bucket._s3 main endpoint_ ls s3://_<bucketname>_
