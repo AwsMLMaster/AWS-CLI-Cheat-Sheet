@@ -132,3 +132,6 @@
 
 ## Access S3 endpoint
 aws s3 --region eu-west-1 --endpoint-url https://bucket. ```s3 main endpoint``` ls s3://```bucketname```
+
+## Upload & Download files from S3
+https://towardsdatascience.com/how-to-upload-and-download-files-from-aws-s3-using-python-2022-4c9b787b15f2
