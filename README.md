@@ -135,3 +135,7 @@ aws s3 --region eu-west-1 --endpoint-url https://bucket. ```s3 main endpoint``` 
 
 ## Upload & Download files from S3
 https://towardsdatascience.com/how-to-upload-and-download-files-from-aws-s3-using-python-2022-4c9b787b15f2
+
+
+##AWS CLI - get list of account and use them in another cli command
+```aws cloudformation delete-stack-instances --stack-set-name <StackSetName>  --accounts `aws cloudformation list-stack-instances --stack-set-name <StackSetName> --query 'Summaries[*].Account' --output text | sed 's/\t/ /g'` --regions <region_name> --no-retain-stacks```
