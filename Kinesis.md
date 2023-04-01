@@ -1,4 +1,4 @@
-## Get first iterator in shard that contains records
+## Get first iterator in Kinesis shard that contains records from trim_horizon
 
 ```import boto3
 
