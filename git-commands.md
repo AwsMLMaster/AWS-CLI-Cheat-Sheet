@@ -6,7 +6,7 @@
    ```git fetch origin master```
 3. in case no important changes were made on the local repo, just reset the local repo from the remote   
    ```git reset --hard origin/master```
-5. create python virtual environment
+5. create python virtual environment   
    ```python3 -m venv .venv```
 6. start python virtual environment   
    ```source .venv/bin/activate```
