@@ -9,7 +9,7 @@
 5. create python virtual environment
    ```python3 -m venv .venv```
 6. start python virtual environment   
-   source .venv/bin/activate
+   ```source .venv/bin/activate```
 7. got ModuleNotFoundError: No module named 'six' ???   
    Solution: ```pip install --upgrade git-remote-codecommit```
 9. 
