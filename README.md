@@ -139,3 +139,7 @@ https://towardsdatascience.com/how-to-upload-and-download-files-from-aws-s3-usin
 
 ## AWS CLI - get list of account and use them in another cli command
 ```aws cloudformation delete-stack-instances --stack-set-name <StackSetName>  --accounts `aws cloudformation list-stack-instances --stack-set-name <StackSetName> --query 'Summaries[*].Account' --output text | sed 's/\t/ /g'` --regions <region_name> --no-retain-stacks```
+
+
+## Lambda - Create Lambda layer for specific python version
+https://www.linkedin.com/pulse/how-create-confluent-python-lambda-layer-braeden-quirante/
