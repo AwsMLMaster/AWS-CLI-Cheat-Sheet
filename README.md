@@ -159,5 +159,6 @@ install packages into virtual environment
 
 to align jupyter credentials with VS Code terminal (export AWS_PROFILE=ML-US-WEST-2)
 ```session = boto3.Session(profile_name="ML-US-WEST-2")  # Replace with your profile name```
+
 ```boto3_bedrock = session.client(service_name="bedrock-runtime", region_name="us-west-2")```
 
