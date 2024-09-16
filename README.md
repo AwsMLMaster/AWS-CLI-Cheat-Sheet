@@ -169,6 +169,6 @@ import os
 
 os.system("echo $VIRTUAL_ENV")
 os.system("pwd")
-os.chdir("/Users/yeminlir/dev/ML/GenAI/Knesset")
+os.chdir("/Users/username/path/to/working/dir")
 print(os.getcwd())
 ```
