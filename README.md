@@ -163,3 +163,12 @@ to align jupyter credentials with VS Code terminal (export AWS_PROFILE=ML-US-WES
 
 ```boto3_bedrock = session.client(service_name="bedrock-runtime", region_name="us-west-2")```
 
+in jupyter notebook checl alignment with the terminal:
+```
+import os
+
+os.system("echo $VIRTUAL_ENV")
+os.system("pwd")
+os.chdir("/Users/yeminlir/dev/ML/GenAI/Knesset")
+print(os.getcwd())
+```
