@@ -152,12 +152,15 @@ create virtual environment
 activate virtual environment
 ```source .venv/bin/activate```
 
+deactivate virtual environment
+```deactivate```
+
 install packages into virtual environment
 ```pip install -r requirements.txt```
 
 ## VS Code Jupyter
 
-to align jupyter credentials with VS Code terminal (export AWS_PROFILE=ML-US-WEST-2)
+to align jupyter credentials with VS Code terminal (```export AWS_PROFILE=ML-US-WEST-2```), To exit the AWS profile in your command prompt: ```unset AWS_PROFILE```
 
 ```session = boto3.Session(profile_name="ML-US-WEST-2")  # Replace with your profile name```
 
