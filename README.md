@@ -158,17 +158,16 @@ deactivate virtual environment
 install packages into virtual environment
 ```pip install -r requirements.txt```
 
-## VS Code Jupyter
+## VS Code Jupyter Notebook AWS credentials
 
 ### Jupyter credentials alignment with terminal/AWS profile for boto3 functions
 
 to align jupyter credentials with VS Code terminal (```export AWS_PROFILE=ML-US-WEST-2```), To exit the AWS profile in your command prompt: ```unset AWS_PROFILE```
 
-```session = boto3.Session(profile_name="ML-US-WEST-2")  # Replace with your profile name```
+```session = boto3.Session(profile_name="ML-US-WEST-2")  # Replace with your profile name
+boto3_bedrock = session.client(service_name="bedrock-runtime", region_name="us-west-2")```
 
-```boto3_bedrock = session.client(service_name="bedrock-runtime", region_name="us-west-2")```
-
-in jupyter notebook checl alignment with the terminal:
+in jupyter notebook check alignment with the terminal:
 ```
 import os
 
