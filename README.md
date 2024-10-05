@@ -160,6 +160,8 @@ install packages into virtual environment
 
 ## VS Code Jupyter
 
+### Jupyter credentials alignment with terminal/AWS profile for boto3 functions
+
 to align jupyter credentials with VS Code terminal (```export AWS_PROFILE=ML-US-WEST-2```), To exit the AWS profile in your command prompt: ```unset AWS_PROFILE```
 
 ```session = boto3.Session(profile_name="ML-US-WEST-2")  # Replace with your profile name```
@@ -174,4 +176,35 @@ os.system("echo $VIRTUAL_ENV")
 os.system("pwd")
 os.chdir("/Users/username/path/to/working/dir")
 print(os.getcwd())
+```
+
+### Jupyter credentials alignment with terminal/AWS profile for 3rd party functions (e.g: langchain)
+
+#### Initialize
+```
+# Load the specific AWS profile
+profile_name = "ML-US-WEST-2"
+session = boto3.Session(profile_name=profile_name)
+```
+#### Use
+```
+# Get the credentials from the session
+credentials = session.get_credentials()
+aws_access_key_id = credentials.access_key
+aws_secret_access_key = credentials.secret_key
+aws_session_token = credentials.token
+
+from langchain_aws import ChatBedrock
+llm = ChatBedrock(
+    model_id="anthropic.claude-3-sonnet-20240229-v1:0",
+    model_kwargs={
+        "max_tokens": 200,
+        "temperature": 0,  # Using 0 to get reproducible results
+        "stop_sequences": ["\n\nHuman:"]
+    },
+    aws_access_key_id=aws_access_key_id,
+    aws_secret_access_key=aws_secret_access_key,
+    aws_session_token=aws_session_token,
+    region_name="us-west-2"
+)
 ```
