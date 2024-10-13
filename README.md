@@ -160,6 +160,9 @@ install packages into virtual environment
 
 ## VS Code Jupyter Notebook AWS credentials
 
+### Jupyter credentials alignment with terminal/AWS profile for boto3 functions - maybe the easiest
+```boto3.setup_default_session(profile_name='ML-US-WEST-2')```
+
 ### Jupyter credentials alignment with terminal/AWS profile for boto3 functions
 
 to align jupyter credentials with VS Code terminal (```export AWS_PROFILE=ML-US-WEST-2```), To exit the AWS profile in your command prompt: ```unset AWS_PROFILE```
